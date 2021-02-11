@@ -1,29 +1,28 @@
 import React from 'react';
 import css from 'styled-jsx/macro'
+import Home from './Home';
 
 const { className, styles } = css.resolve`
   div {
     font-family: sans-serif;
     text-align: center;
   },
-  h1 {
-    color: red;
-  },
   .content {
-    color: pink;
+    color: green;
   }
 `
 
 function App() {
   return (
-    <div className={className}>
-      <h1 className="App-header">
-      </h1>
-      <p className="content">
-        React & full stack developer
-      </p>
-      {styles}
-    </div>
+      <React.Fragment>
+      <div className={className}>
+        <Home name="React with SSR"/>
+        <p className="content">
+          React/Full stack developer
+        </p>
+        {styles}
+      </div>
+    </React.Fragment>
   );
 }
 
