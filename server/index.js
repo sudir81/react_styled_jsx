@@ -8,7 +8,6 @@ import { flushToHTML } from 'styled-jsx/server'
 
 import App from '../src/App'
 
-import '../src/index.css';
 
 const PORT = process.env.PORT || 3006;
 const app = express();
@@ -39,6 +38,7 @@ app.get('/', (req, res) => {
                 <meta name="description" content="Web site created using create-react-app"/>
                 <link rel="manifest" href="/manifest.json"/>
                 <title>React App</title>
+                <link rel="stylesheet" href="../src/index.css'">
                 ${styles}
             </head>
             <body>
