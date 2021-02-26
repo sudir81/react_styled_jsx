@@ -8,6 +8,8 @@ import { flushToHTML } from 'styled-jsx/server'
 
 import App from '../src/App'
 
+import '../src/index.css';
+
 const PORT = process.env.PORT || 3006;
 const app = express();
 
