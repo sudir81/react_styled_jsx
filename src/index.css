@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-first-div {
+  font-family: sans-serif;
+  text-align: center;
+}
+.app-content {
+  color: green;
+}
+
+.home-first-div {
+  color: pink;
+}
